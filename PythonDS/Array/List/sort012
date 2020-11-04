@@ -1,0 +1,22 @@
+T = int(input())
+for i in range(T):
+    N = int(input())
+    arr = list(map(int,input().strip().split()))
+    z_c = arr.count(0)
+    o_c = arr.count(1)
+    t_c = arr.count(2)
+    k=0
+    for i in range(z_c):
+        arr[k] = 0
+        k +=1
+    for i in range(o_c):
+        arr[k] = 1
+        k+=1
+    for j in range(t_c):
+        arr[k] = 2
+        k +=1
+   
+    for ele in arr:
+        print(ele,end=" ")
+    print()
+        
